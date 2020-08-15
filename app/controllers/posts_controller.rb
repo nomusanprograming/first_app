@@ -3,10 +3,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def new
+  def new #何もありません。
   end
 
-  def create
+  def create #コントローラーの編集をインデックスにaddしてcommitします。
     Post.create(content: params[:content])
   end
 end
